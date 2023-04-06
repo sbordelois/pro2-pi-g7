@@ -4,11 +4,11 @@
 
 /*====== Variables ======*/
 :root {
-  --yellow: #f9f111;
+  --yellow: #F5F3F5;
   --dark-blue: #03264C;
   --light-blue: #1259c3;
   --gray: #666666;
-  --light-gray: #ebebeb;
+  --light-gray: #F5F3F5;
   --green: #39b54a;
   --base-font-family: 'Roboto', sans-serif
 }
@@ -68,7 +68,7 @@ hr {
 /*====== Main Header ======*/
 .main-header {
   padding: 15px 0;
-  background-color: var(--yellow);
+  background-color: #F5F3F5;
 }
 
 .main-header_home-link,
@@ -154,7 +154,7 @@ hr {
 
 /*====== Banner ======*/
 .banner {
-  background-image: url(/images/img-home-banner.jpg);
+  background-image: url(/images/banner-index.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -171,7 +171,7 @@ hr {
 .products-title {
   font-size: 2.4em;
   font-weight: 400;
-  color: var(--gray);
+  color: #FF3131;
 }
 
 .product-box {
@@ -202,6 +202,7 @@ hr {
   font-size: 2.4em;
   font-weight: 300;
   margin: 0;
+  color: var(--dark-blue)
 }
 
 .product-box_data span {
@@ -214,7 +215,7 @@ hr {
 .product-box_data p {
   font-size: 1.5em;
   width: 100%;
-  color: var(--gray);
+  color: #004AAD;
   margin: 0;
   height: 0;
   transition: 300ms;
@@ -269,18 +270,18 @@ hr {
 }
 
 .footer-data i {
-  color: var(--light-blue);
+  color: #FF3131;
   font-size: 3.5em;
 }
 
 .footer-data h2 {
-  color: var(--gray);
+  color: var(--dark-blue);
   font-size: 2.4em;
   font-weight: 400;
 }
 
 .footer-data p {
-  color: var(--gray);
+  color: #004AAD;
   font-size: 1.5em;
   font-weight: 300;
 }
