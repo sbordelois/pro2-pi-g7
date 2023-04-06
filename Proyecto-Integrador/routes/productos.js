@@ -5,5 +5,6 @@ const controller = require ("../controllers/productosController")
 router.get("/", controller.index)
 
 
+
 module.exports= router
 
