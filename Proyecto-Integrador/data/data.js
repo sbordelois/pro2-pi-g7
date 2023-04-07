@@ -1,10 +1,10 @@
 const data = {
     productos: [
         {
-            nombre:"adidas samba ",
+            nombre:"Adidas Samba ",
             imgUrl:"/images/products/adidas-samba.png",
             precio: "15usd",
-            descripcion:"Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
+            descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
             comments: [
                 {
                     usuario: "Pepe",
