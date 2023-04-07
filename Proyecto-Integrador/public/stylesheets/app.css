@@ -154,11 +154,9 @@ hr {
 
 /*====== Banner ======*/
 .banner {
-  background-image: url(/images/banner-index.png);
-  background-repeat: no-repeat;
+  display: flexbox;
   background-size: cover;
   background-position: center center;
-  height: 100px;
 }
 
 
