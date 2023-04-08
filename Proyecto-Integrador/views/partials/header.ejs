@@ -26,6 +26,7 @@
             <i class="fas fa-bars"></i>
         </button>
 
+        <% if (usuarioLogueado === true) {%>
         <nav class="main-navbar">
             <ul class="left-navbar">
                 <li><a href="./">Todos los productos</a></li>
@@ -44,6 +45,7 @@
                         </button>
                     </form>
                 </li> -->
+                <%} else {%>
                 <li>
                     <a href="/users/register">Creá tu cuenta <i class="far fa-address-card"></i>
                     </a>
@@ -51,6 +53,8 @@
                 <li>
                     <a href="/users/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
                 </li>
+                <% } %>
+                <!-- chequear si estan bien puestos los if -->
             </ul>
         </nav>
     </div>
