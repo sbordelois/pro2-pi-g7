@@ -100,4 +100,5 @@ const data = {
             ]
         }
     ]}
-//aca falta agregar la info para todos los otros ejemplos que usamos
+
+module.exports = data
