@@ -4,7 +4,7 @@
 
 /*====== Variables ======*/
 :root {
-  --yellow: #F5F3F5;
+  --yellow: #f5f3f5;
   --dark-blue: #03264C;
   --light-blue: #1259c3;
   --gray: #666666;
@@ -130,6 +130,7 @@ hr {
 .left-navbar,
 .right-navbar {
   font-size: 1.5em;
+  color: #101971;
 }
 
 .logout{
@@ -140,7 +141,7 @@ hr {
 }
 
 .logout:hover{
-  color: #1259c3;
+  color: #1b52d2;
 }
 
 .left-navbar a,
@@ -169,7 +170,7 @@ hr {
 .products-title {
   font-size: 2.4em;
   font-weight: 400;
-  color: #FF3131;
+  color: rgb(255, 49, 49);
 }
 
 .product-box {

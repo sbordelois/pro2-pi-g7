@@ -1,37 +1,13 @@
 <%- include('./partials/head')  %>
-<%- include('./partials/header') %>
+<!-- falta include('./partials/header') pero por alguna razon crashea>
+ -->
 
-	
-				<ul class="right-navbar">
-					<li><a href="profile.html">
-							Nombre del usuario <i class="fas fa-user"></i>
-						</a>
-					</li>
-					<li>
-						<form action="" method="post">
-							<button class="logout" type="submit">
-								Cerrar sesión <i class="fas fa-sign-in-alt"></i>
-							</button>
-						</form>
-					</li>
-					<!-- Solo deslogueado <li>
-							<a href="register.html">Creá tu cuenta <i class="far fa-address-card"></i>
-							</a>
-						</li>
-						<li>
-							<a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-						</li> -->
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!-- /Header -->
 
 	<!-- Datos del usuario -->
 	<section class="info-usuario container products-wrapper">
 		<div class="row">
 			<div class="img-container offset-3 col-2">
-				<img src="https://via.placeholder.com/150" alt="foto de perfil" class="foto-perfil">
+				<img src="/images/users/user-pic.png" alt="foto de perfil" class="foto-perfil">
 			</div>
 			<div class="data-container col-6">
 				<div class="d-flex align-items-center ">
@@ -181,6 +157,5 @@
 				</section>
 			</div>
 		</div>
-	</div>
-
+	</div> 
 <%- include('./partials/footer') %>
