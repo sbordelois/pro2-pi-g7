@@ -1,25 +1,28 @@
 <%- include('./partials/head')  %>
-<!-- falta include('./partials/header') pero por alguna razon crashea>
- -->
+
 
 <!-- Novedades -->
-<div class="container products-wrapper">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="products-title">Ingresar</h2>
-        </div>
-        <form>
-            <div>
-                <input type="text" placeholder="Digita tu usuario">
+<section class="section-formularios">
+    <div class="container products-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulos-formularios">Ingresar</h2>
             </div>
-            <div>
-                <input type="password" placeholder="Digita tu contrasenia">
-            </div>
-            <div>
-                <input type="checkbox" placeholder="Recordarme"><a>Recordarme</a>
-            </div>
-            <button>Enter</button>
 
-        </form>
+            <form class="formularios">
+                <div>
+                    <input type="text" placeholder="Digita tu usuario">
+                </div>
+                <div>
+                    <input type="password" placeholder="Digita tu contrasenia">
+                </div>
+                <div>
+                    <input type="checkbox" placeholder="Recordarme"><a>Recordarme</a>
+                </div>
+                <button>Enter</button>
+
+            </form>
+    </div>
+</section>
 
 <%- include('./partials/footer') %>

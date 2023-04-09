@@ -3,7 +3,7 @@ const controller = {
     index: function (req, res) {
         res.render("index", {
             productos : data.productos,
-            usuarioLogueado: false //true o false
+            usuarioLogueado: true //true o false
         })
     }
 }

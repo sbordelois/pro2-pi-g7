@@ -1,36 +1,40 @@
 <%- include('./partials/head')  %>
-<!-- falta include('./partials/header') pero por alguna razon crashea>
- -->
 
 
+<section class="section-formularios">
 <div class="container products-wrapper">
     <div class="row">
         <div class="col-12">
-            <h2 class="products-title">Editar mi perfil</h2>
+            <h2 class="titulos-formularios">Editar mi perfil</h2>
         </div>
-        <!-- Show the "ultimos" products -->
+
         <h2 class="col-12"> 
-            <form>
+            <form class="formularios">
                 <div>
-                    <input type="text" placeholder="Nuevo usuario">
-                    <button>Cambiar usuario</button>
+                    <input type="email" placeholder="Digita tu mail">
                 </div>
                 <div>
-                    <input type="text" placeholder="Nuevo DNI">
-                    <button>Cambiar DNI</button>
+                    <input type="text" placeholder="Digita tu usuario">
                 </div>
                 <div>
-                    <input type="text" placeholder="Nueva Contraseña">
-                    <button>Cambiar Contraseña</button>
+                    <input type="password" placeholder="Digita tu contrasenia">
                 </div>
                 <div>
-                    <input type="text" placeholder="Nuevo email">
-                    <button>Cambiar email</button>
+                    <input type="date" placeholder="Digita tu fecha de nacimiento">
                 </div>
+                <div>
+                    <input type="number" placeholder="Digita tu DNI">
+                </div>
+                <div>
+                    <input type="text" placeholder="Link a tu foto de perfil">
+                </div>
+                <button>Crear Cuenta</button>
     
             </form>
         
         </h2>
+    </section>
+<%- include('./partials/footer') %>
 
 <!-- el footer queda feo aca -->
 <!--  include('./partials/footer') %> -->
