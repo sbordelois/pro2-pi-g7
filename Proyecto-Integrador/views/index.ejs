@@ -24,8 +24,9 @@
           <article class="product-box_data">
             <h2><%= productos [i] . nombre %></h2>
             <p><%= productos [i] . descripcion %></p>
-            <p><%= productos [i] . precio %></p>
-            <p><%= productos [i] . comments %></p>
+            <p>Comentarios: <br>
+            <%= `${productos [i] . comments.usuario}` + ': ' + `${productos [i] . comments.Comentario}` %></p>
+          
           </article>
         </a>
       </section>
