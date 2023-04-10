@@ -1,4 +1,19 @@
 const data = {
+    usuarios: [
+        {
+            nombre:"Delfina",
+            email:"delfinapinasco@gmail.com",
+            dni: "45584366",
+            fechadenac: "12/03/04"
+
+        }
+    ],
+    comentarios: [
+        {
+            usuario: "Delfina",
+            comentario: "Que lindas zapatillas!!"
+        }
+    ],
     productos: [
         {
             nombre:"Adidas Samba ",
@@ -93,5 +108,6 @@ const data = {
         }
     ]
 }
+
 
 module.exports = data
