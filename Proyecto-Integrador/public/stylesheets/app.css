@@ -327,6 +327,7 @@ hr {
   width: 70%;
   display: block;
   margin: auto;
+  border-radius: 10px;
 }
 
 .product-detail-info {
