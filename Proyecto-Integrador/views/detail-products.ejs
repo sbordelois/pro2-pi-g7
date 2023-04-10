@@ -1,0 +1,73 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+
+<!-- <span class="container-detail">
+
+    <span class="columna1">
+        <h2 class="products-title">Adidas Samba</h2>
+        <figure class="img-detail">
+            <img src=/images/products/adidas-samba.png alt="producto">
+        </figure>
+    </span>
+    
+    <span class="columna2">
+        <section >
+              <h2>Adidas S</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+              <p>Comentarios: <br>
+                Buenisimas
+              </p>
+        </section>
+    </span>
+
+</span> -->
+
+<div class="container products-wrapper">
+    <div class="d-flex align-items-center">
+        <h2 class="products-title">Adidas Samba</h2> 
+        <p class="product-detail-description">
+            <a href="/productos">Editar</a>
+        </p>
+    </div>
+    <div class="product-detail">
+        <div class="row">
+            <article class="col-12 col-lg-8 product-detail-info">
+                <img src="/images/products/adidas-samba.png" alt="" class="product-detail-img">
+                <p class="product-detail-description">
+                    Descripción corta del producto: <br>
+                    Lorem ipsum dolor,sit amet consectetur adipisicing elit. Tae ipsam amet eum, totam dolore libero illo unde? Consectetur dolorem neque veritatis.</p>
+            </article>
+            <div class="col-12 col-lg-4">
+                <section class="comments">
+                    <article>
+                        <img src="/images/users/user-pic.png"" alt="">
+                        <div class="data">
+                            <p class="user">
+                            <strong> <a href="profile.html">Juana: </a> </strong>
+                             Texto del comentario que escribió el usuario.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="/images/users/user-pic.png" alt="">
+                        <div class="data">
+                            <p class="user">
+                            <strong> <a href="profile.html">Nicolas: </a> </strong>
+                             Texto del comentario que escribió el usuario.</p>
+                        </div>
+                    </article>
+
+                </section>
+                <form class="form" action="" method="POST">
+                    <input class="form-input" type="text" value="" placeholder="Agrega tu comentario">
+                    <button type="submit" class="buy-now-button">COMENTAR</button>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer') %>
+
+

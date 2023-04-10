@@ -1,8 +1,32 @@
 <%- include('./partials/head') %>
 
 <!-- en esta pagina vana a aparecer todos los productos , y el formulario para agregar uno -->
-<body> 
-  <section class="section-formularios">
+<div class="container products-wrapper">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="products-title">Todos los productos</h2>
+    </div>
+    <% for (let i=0; i < productos.length ; i++) {%>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <section class="product-box">
+        <a href="/"> 
+          <figure class="product-box_image">
+            <img src= <%= productos [i] . imgUrl %> alt="producto">
+          </figure>
+          <article class="product-box_data">
+            <h2><%= productos [i] . nombre %></h2>
+            <p><%= productos [i] . descripcion %></p>
+            <p>Comentarios: <br>
+            <%= `${productos [i] . comments.usuario}` + ': ' + `${productos [i] . comments.Comentario}` %></p>
+
+          </article>
+        </a>
+      </section>
+    </div>
+  <%}%>
+
+
+<div class="section-formularios">
     <div class="container products-wrapper">
         <div class="row">
             <div class="col-12">
@@ -25,31 +49,6 @@
           <button>Subir producto</button>
         </form>
       </div>
-    </section>
-    <div class="container products-wrapper">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="products-title">Todos los productos</h2>
-          </div>
-          <!-- Show the "ultimos" products -->
-          <% for (let i=0; i < productos.length ; i++) {%>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <section class="product-box">
-              <a href="/"> 
-                <figure class="product-box_image">
-                  <img src= <%= productos [i] . imgUrl %> alt="producto">
-                </figure>
-                <article class="product-box_data">
-                  <h2><%= productos [i] . nombre %></h2>
-                  <p><%= productos [i] . descripcion %></p>
-                  <p>Comentarios: <br>
-                  <%= `${productos [i] . comments.usuario}` + ': ' + `${productos [i] . comments.Comentario}` %></p>
-                
-                </article>
-              </a>
-            </section>
-          </div>
-        <%}%>
-</body>
+    </div>
 
 <%- include('./partials/footer') %>

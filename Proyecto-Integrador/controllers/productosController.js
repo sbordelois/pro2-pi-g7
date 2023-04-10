@@ -6,9 +6,10 @@ const controller = {
             usuarioLogueado: true //true o false
         })
     },
-    subirproductos: function(req, res){
-        res.render("products")
+    detail: function(req, res){
+        res.render("detail-products" )
     }
+
 }
 
 module.exports = controller
