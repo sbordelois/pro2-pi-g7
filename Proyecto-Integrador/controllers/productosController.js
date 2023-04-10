@@ -7,7 +7,11 @@ const controller = {
         })
     },
     detail: function(req, res){
-        res.render("detail-products" )
+        res.render("detail-products" ,{
+        productos : data.productos,
+        usuarioLogueado: true //true o false
+        }
+        )
     }
 
 }

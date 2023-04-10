@@ -1,5 +1,10 @@
 <%- include('./partials/head') %>
-<%- include('./partials/header') %>
+
+<% if (usuarioLogueado === true) {%>
+    <%- include('./partials/headerLogueado') %>
+<%} else {%>
+    <%- include('./partials/header') %>
+<%}%>
 
 
 <!-- <span class="container-detail">
@@ -52,15 +57,19 @@
                         <img src="/images/users/user-pic.png" alt="">
                         <div class="data">
                             <p class="user">
-                            <strong> <a href="profile.html">Nicolas: </a> </strong>
+                            <strong> <a href="/users/profile">Nicolas: </a> </strong>
                              Texto del comentario que escribió el usuario.</p>
                         </div>
                     </article>
 
                 </section>
-                <form class="form" action="" method="POST">
+                <form class="form" action="/productos/detail" method="POST">
+                    
                     <input class="form-input" type="text" value="" placeholder="Agrega tu comentario">
-                    <button type="submit" class="buy-now-button">COMENTAR</button>
+                    <button href="/prodctos/detail" type="submit" class="buy-now-button">
+                        <a href="/productos/detail">COMENTAR</a>
+                    </button>
+                    
                 </form>
                 <hr>
             </div>
