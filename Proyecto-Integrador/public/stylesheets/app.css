@@ -1,29 +1,23 @@
 /*====== Fonts ======*/
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+
 
 /* =======formularios======== */
 
 /*====== Variables ======*/
 :root {
---white: #F5F5F5;
+--body:#f8f8f8;
+--light-gray: #F5F5F5;
+--white: #ffffff;
 --lightblue: #DFE2F4;
 --blue: #004AAD;
 --darkblue: #0F3364;
 --red: #FF3131;
---base-font-family: 'Bebas Neue';
-/* --font-titles: 'Roboto', sans-serif ;
---font-text : */
-
+--font-title: 'Bebas Neue';
+--font-text: 'Barlow Condensed';
 }
 
-
-/*   --yellow: #f5f3f5;
-  --dark-blue: #03264C;
-  --light-blue: #1259c3;
-  --gray: #666666;
-  --light-gray: #F5F3F5;
-  --green: #39b54a;
-  --base-font-family: 'Roboto', sans-serif */
 
 
 
@@ -40,9 +34,8 @@ body {
 }
 
 body {
-  font-family: var(--base-font-family);
   font-weight: 300;
-  background-color: var(--light-gray);
+  background-color: var(--body);
 }
 
 ul,
@@ -81,7 +74,7 @@ hr {
 /*====== Main Header ======*/
 .main-header {
   padding: 15px 0;
-  background-color: var(--white);
+  background-color: var(--light-gray);
 }
 
 .main-header_home-link,
@@ -90,6 +83,7 @@ hr {
 }
 
 .main-header_credit-link {
+  font-family: var(--font-text);
   font-size: 1.5em;
   margin-top: 20px;
   text-align: center;
@@ -99,6 +93,7 @@ hr {
   position: relative;
   display: flex;
   align-items: center;
+
 }
 
 .search-form_input {
@@ -109,6 +104,9 @@ hr {
   border-radius: 3px;
   height: 40px;
   font-size: 1.5em;
+  font-family: var(--font-text);
+  font-style: var(--darkblue);
+
 }
 
 .search-form_button {
@@ -142,6 +140,7 @@ hr {
 
 .left-navbar,
 .right-navbar {
+  font-family: var(--font-text);
   font-size: 1.5em;
   color: var(--darkblue);
 }
@@ -151,6 +150,7 @@ hr {
   border: 0px;
   cursor: pointer;
   font-size: 1em;
+  font-family: var(--font-text);
 }
 
 .logout:hover{
@@ -179,6 +179,7 @@ hr {
 }
 
 .products-title {
+  font-family: var(--font-title);
   font-size: 2.4em;
   font-weight: 400;
   color: var(--red);
@@ -210,6 +211,7 @@ hr {
 
 .product-box_data h2 {
   font-size: 2.4em;
+  font-family: var(--font-title);
   font-weight: 300;
   margin: 0;
   color: var(--dark-blue)
@@ -224,6 +226,7 @@ hr {
 
 .product-box_data p {
   font-size: 1.5em;
+  font-family: var(--font-text);
   width: 100%;
   color: var(--blue);
   margin: 0;
@@ -288,12 +291,16 @@ hr {
   color: var(--dark-blue);
   font-size: 2.4em;
   font-weight: 400;
+  font-family: var(--font-title);
+
 }
 
 .footer-data p {
   color: var(--blue);
   font-size: 1.5em;
   font-weight: 300;
+  font-family: var(--font-text);
+
 }
 
 .sub-footer {
@@ -303,7 +310,7 @@ hr {
 
 .sub-footer p {
   margin: 0;
-  color: var(--gray);
+  color: var(--dark-blue);
   padding: 15px 0;
 }
 
@@ -325,7 +332,7 @@ hr {
 }
 
 .product-detail-info {
-  border-right: 1px solid var(--blue);
+  border-right: 1px solid var(--darkblue);
   padding: 15px;
   /* height: 100%; */
 }
@@ -333,12 +340,16 @@ hr {
 .product-detail-title {
   font-weight: 400;
   font-size: 2.8em;
+  font-family: var(--font-title);
+  font-style: var(--red);
+
 }
 
 .product-detail-description {
-  font-style: var(--blue);
+  font-style: var(--darkblue);
   padding: 15px 15px 15px 40px;
   font-size: 1.8em;
+  font-family: var(--font-text);
   line-height: 1.5;
 }
 
@@ -347,6 +358,8 @@ hr {
   padding: 0 15px;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-text);
+
 }
 .small {
   font-size: 1em;
@@ -382,6 +395,7 @@ hr {
 
 .buy-now-button {
   background-color: var(--blue);
+  font-family: var(--font-text);
   font-size: 1.5em;
   width:fit-content;
   align-self: center;
@@ -430,6 +444,7 @@ hr {
   
 }
 .comments p{
+  font-family: var(--font-text);
   font-size: 1.5em;
   margin-top: 0;
 }
@@ -443,17 +458,25 @@ hr {
   border-radius: 2cm;
 }
 .formularios{
-  margin: 1cm;
+  margin-bottom: 1cm;
+  margin-left: 2cm;
+  font-family: var(--font-text);
+  block-size: auto;
 }
 .titulos-formularios{
   font-size:30px;
   color:var(--darkblue);
-  margin: 1cm;
+  margin-left: 1cm;
+  margin-top: 1cm;
+  font-family: var(--font-title);
+
 }
 
 .form-label {
   display: inline-block;
   margin: 10px ;
+  font-family: var(--font-text);
+
 }
 
 .form-input {
@@ -464,11 +487,15 @@ hr {
   height: 50px;
   margin-bottom: 10px;
   font-size: 20px;
+  font-family: var(--font-text);
   border-radius: 8px;
   border: none;
   padding: 0 10px;
 }
 
+button{
+  font-family: var(--font-title);
+}
 
 .error{
   color: var(--red);
@@ -486,6 +513,8 @@ textarea.form-input {
   border-bottom: 1px solid #ccc;
   padding-bottom: 30px;
   font-size: 16px;
+  font-family: var(--font-text);
+
 }
 
 .foto-perfil{
@@ -495,6 +524,8 @@ textarea.form-input {
 .main-title{
   font-size: 25px;
   margin-bottom: 10px;
+  font-family: var(--font-title);
+
 }
 
 .btn{
