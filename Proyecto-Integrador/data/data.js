@@ -2,9 +2,11 @@ const data = {
     usuarios: [
         {
             nombre:"Delfina",
+            usuario:"delfinapinasco",
             email:"delfinapinasco@gmail.com",
             dni: "45584366",
-            fechadenac: "12/03/04"
+            fechadenac: "12/03/04",
+            foto:"/images/users/user-pic.png"
 
         }
     ],
