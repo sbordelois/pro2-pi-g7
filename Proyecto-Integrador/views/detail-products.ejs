@@ -30,7 +30,7 @@
 
 <div class="container products-wrapper">
     <div class="d-flex align-items-center">
-        <h2 class="products-title">Adidas Samba</h2> 
+        <h2 class="products-title"><%= productos [0] . nombre %></h2> 
         <p class="product-detail-description">
             <a href="/productos">Editar</a>
         </p>
@@ -38,10 +38,10 @@
     <div class="product-detail">
         <div class="row">
             <article class="col-12 col-lg-8 product-detail-info">
-                <img src="/images/products/adidas-samba.png" alt="" class="product-detail-img">
+                <img src=<%= productos [0] . imgUrl %> alt="" class="product-detail-img">
                 <p class="product-detail-description">
                     Descripción corta del producto: <br>
-                    Lorem ipsum dolor,sit amet consectetur adipisicing elit. Tae ipsam amet eum, totam dolore libero illo unde? Consectetur dolorem neque veritatis.</p>
+                    <%= productos [0] . descripcion %>.</p>
             </article>
             <div class="col-12 col-lg-4">
                 <section class="comments">
@@ -49,11 +49,11 @@
                         <img src="/images/users/user-pic.png"" alt="">
                         <div class="data">
                             <p class="user">
-                            <strong> <a href="/users/profile">Juana: </a> </strong>
-                             Texto del comentario que escribió el usuario.</p>
+                            <strong> <a href="/users/profile"> <%= productos [0] . comments . usuario %> :</a> </strong>
+                            <%= productos [0] . comments . Comentario %></p>
                         </div>
                     </article>
-                    <article>
+<!--                     <article>
                         <img src="/images/users/user-pic.png" alt="">
                         <div class="data">
                             <p class="user">
@@ -61,16 +61,17 @@
                              Texto del comentario que escribió el usuario.</p>
                         </div>
                     </article>
-
+ -->
                 </section>
-                <form class="form" action="/productos/detail" method="POST">
                     
-                    <input class="form-input" type="text" value="" placeholder="Agrega tu comentario">
-                    <button href="/prodctos/detail" type="submit" class="buy-now-button">
-                        <a href="/productos/detail">COMENTAR</a>
-                    </button>
-                    
-                </form>
+                    <form class="form" action="/productos/detail" method="POST">
+                        <input class="form-input" type="text" value="" placeholder="Agrega tu comentario">
+                        <button href="/prodctos/detail" type="submit" class="buy-now-button">
+                            <a href="/productos/detail">COMENTAR</a>
+                        </button>
+                        
+                    </form>
+
                 <hr>
             </div>
         </div>

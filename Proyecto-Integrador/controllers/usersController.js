@@ -1,3 +1,4 @@
+const { usuarios } = require('../data/data')
 const data = require('../data/data')
 const controller = {
     login: function(req, res, next) {
@@ -11,7 +12,8 @@ const controller = {
     profile: function(req, res, next) {
         res.render("profile", {
           productos : data.productos,
-          usuarioLogueado: true //true o false
+          usuarioLogueado: true, //true o false
+          usuarios : data.usuarios
       })
       },
     
