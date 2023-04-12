@@ -260,6 +260,7 @@ hr {
 
 .product-box:hover {
   box-shadow: 0 0 5px var(--dark-blue);
+  background-color: var(--body);
 }
 
 .product-box:hover p {

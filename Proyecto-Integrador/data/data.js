@@ -128,8 +128,8 @@ const data = {
                 
         },
         {
-            nombre:"Veja V-12",
-            imgUrl:"/images/products/veja.png",
+            nombre:"Margiela Silver",
+            imgUrl:"/images/products/margiela.png",
             descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
             comments: 
                 {
@@ -140,8 +140,8 @@ const data = {
                 
         },
         {
-            nombre:"Veja V-12",
-            imgUrl:"/images/products/veja.png",
+            nombre:"Nike Air Jordan",
+            imgUrl:"/images/products/jordan-blue.png",
             descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
             comments: 
                 {
