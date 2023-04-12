@@ -19,9 +19,7 @@ const data = {
                 {
                     usuario: "Pepe",
                     Comentario: "Que buenas zapatillas"
-                }
-
-                
+                }       
         },
         
         {
@@ -143,11 +141,19 @@ const data = {
             nombre:"Nike Air Jordan",
             imgUrl:"/images/products/jordan-blue.png",
             descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
-            comments: 
-                {
-                    usuario: "Pepe",
-                    Comentario: "Que buenas zapatillas"
-                }
+            comments: [{
+                usuario: "simonebordelois",
+                Comentario: "Que buenas zapatillas!!"
+            },
+            {
+                usuario: "sofia123",
+                Comentario: "Son muy cómodas, las recomiendo!!"
+            },
+            {
+                usuario: "lucasbachrach",
+                Comentario: "Son muy cómodas, las recomiendo!!"
+            }
+                ]
 
                 
         },
