@@ -10,11 +10,9 @@
                     </a>
                 </li>
                 <li>
-                    <form action="" method="post">
-                        <button href="/users/login" class="logout" type="submit"><a href="/users/login">
-                            Cerrar sesión <i class="fas fa-sign-in-alt"></i> </a>
-                        </button> 
-                    </form>
+                    <button href="/users/login" class="logout" type="submit"><a href="/users/login" onclick="return confirm('¿Seguro que quieres cerrar sesion?')">
+                        Cerrar sesión <i class="fas fa-sign-in-alt"></i> </a>
+                    </button> 
                 </li> 
             </ul>
 
