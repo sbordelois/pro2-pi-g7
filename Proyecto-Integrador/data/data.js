@@ -127,6 +127,30 @@ const data = {
 
                 
         },
+        {
+            nombre:"Veja V-12",
+            imgUrl:"/images/products/veja.png",
+            descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
+            comments: 
+                {
+                    usuario: "Pepe",
+                    Comentario: "Que buenas zapatillas"
+                }
+
+                
+        },
+        {
+            nombre:"Veja V-12",
+            imgUrl:"/images/products/veja.png",
+            descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
+            comments: 
+                {
+                    usuario: "Pepe",
+                    Comentario: "Que buenas zapatillas"
+                }
+
+                
+        },
     ]
 }
 
