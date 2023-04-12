@@ -1,5 +1,9 @@
 <%- include('./partials/head')  %>
-
+<% if (usuarioLogueado === true) {%>
+    <%- include('./partials/headerLogueado') %>
+<%} else {%>
+    <%- include('./partials/header') %>
+<%}%>
 
 <section class="section-formularios">
 <div class="container-forms">

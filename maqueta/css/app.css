@@ -299,9 +299,10 @@ hr {
 
 /*====== Product Detail ======*/
 .product-detail {
-  background-color: #ffffff;
-  border-radius: 8px;
+  background-color: var(--light-gray);
+  border-radius: 2cm;
   overflow: hidden;
+
 }
 
 .product-detail-img {
@@ -327,10 +328,6 @@ hr {
   line-height: 1.5;
 }
 
-.product-detail-price {
-  font-size: 5.5em;
-  margin: 10px 0;
-}
 .product-detail .form{
   padding: 0 15px;
   display: flex;
@@ -397,7 +394,7 @@ hr {
   background-color: rgb(248, 69, 37);
 }
 .comments {
-  padding: 30px 15px 15px 0;
+  padding: 1px;
 }
 .comments article{
   margin-bottom: 7.5px;

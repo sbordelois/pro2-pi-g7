@@ -177,6 +177,7 @@ hr {
   margin-top: 30px;
   margin-bottom: 30px;
   background-color: var(--white);
+  border-radius: 10px;
 }
 
 .products-title {
@@ -322,7 +323,6 @@ hr {
 
 .product-detail {
   background-color: var(--white);
-  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -427,7 +427,7 @@ hr {
   background-color: var(--red);
 }
 .comments {
-  padding: 30px 15px 15px 0;
+  padding: 2px
 }
 .comments article{
   margin-bottom: 7.5px;
