@@ -1,0 +1,1 @@
+SELECT * FROM pro2pig7.usuarios;
