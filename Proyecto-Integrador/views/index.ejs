@@ -7,9 +7,12 @@
     <%- include('./partials/header') %>
 <%}%>
 
-<span class="banner">
-  <img src="/images/banner-index.png" alt="Banner Publicidad">
-</span>
+<banner class="banner-section">
+  <span class="banner-span">
+    <img class="banner-img" src="/images/banner-index.png" alt="Banner Publicidad">
+  </span>
+</banner>
+
 <!-- /Banner -->
 
 <!-- Novedades-->
@@ -55,7 +58,6 @@
         <p><%= productos [i] . descripcion %></p>
         <p>Comentarios: <br>
         <%= comments[0].usuario + ': ' + comments[0].Comentario %></p>
-      
       </article>
       </a>
     </section>

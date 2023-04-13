@@ -166,9 +166,19 @@ hr {
 
 
 /*====== Banner ======*/
-.banner {
-  display: flexbox;
-  background-position: center center;
+
+.banner-section{
+  margin: 1cm;
+  align-items: center;}
+
+.banner-span {
+  margin-left: 2cm;
+  margin-right: 2cm;
+  display: block;
+}
+
+.banner-img{
+  border-radius: 2cm;
 }
 
 
