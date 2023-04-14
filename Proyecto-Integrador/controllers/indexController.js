@@ -3,7 +3,7 @@ const controller = {
     index: function (req, res) {
         res.render("index", {
             productos : data.productos,
-            usuarioLogueado: false, //true o false
+            usuarioLogueado: false, 
             usuarios : data.usuarios,
             comments: data.comments,
             p: data.productos.slice(-4) ,

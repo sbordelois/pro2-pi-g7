@@ -12,7 +12,7 @@ const controller = {
     profile: function(req, res, next) {
         res.render("profile", {
           productos : data.productos ,
-          usuarioLogueado: true, //true o false
+          usuarioLogueado: true, 
           usuarios : data.usuarios,
           comments: data.comments
       })
@@ -21,7 +21,7 @@ const controller = {
     edit: function(req, res, next) {
         res.render("edit-profile", {
           productos : data.productos,
-          usuarioLogueado: true, //true o false
+          usuarioLogueado: true, 
           usuarios: data.usuarios
       })
       }

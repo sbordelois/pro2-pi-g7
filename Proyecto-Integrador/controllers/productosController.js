@@ -2,14 +2,14 @@ const data = require('../data/data')
 const controller = {
     add: function(req, res){
         res.render("addproducts", {
-            usuarioLogueado: true, //true o false
+            usuarioLogueado: true, 
             usuarios: data.usuarios
         })
     },
     detail: function(req, res){
         res.render("detail-products" ,{
         productos : data.productos,
-        usuarioLogueado: false, //true o false
+        usuarioLogueado: false, 
         usuarios : data.usuarios,
         comments: data.comments
         }

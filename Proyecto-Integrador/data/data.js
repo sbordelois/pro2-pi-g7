@@ -44,7 +44,7 @@ const data = {
         {
             nombre:"Adidas Samba ",
             imgUrl:"/images/products/adidas-samba.png",
-            descripcion:"Descripción corta del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
+            descripcion:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque",
     
         },        
         {
