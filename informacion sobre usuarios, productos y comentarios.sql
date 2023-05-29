@@ -67,7 +67,7 @@ insert into usuarios (nombre, email, password, dni, fecha_de_nacimiento)
     
 use `pro2pig7`;
 insert into productos (usuario_id, nombre, descripcion)
-	values (1, "Vans Lx", "zapatillas");
+	values (6, "Vans Lx", "zapatillas");
 
 use `pro2pig7`;  
 insert into productos (usuario_id, nombre, descripcion)
@@ -79,7 +79,7 @@ insert into productos (usuario_id, nombre, descripcion)
 
 use `pro2pig7`;   
 insert into productos (usuario_id, nombre, descripcion)
-	values (5, "Converse CDG", "zapatillas");
+	values (6, "Converse CDG", "zapatillas");
 
 use `pro2pig7`;
 insert into productos (usuario_id, nombre, descripcion)
