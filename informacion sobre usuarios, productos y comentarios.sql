@@ -61,6 +61,9 @@ insert into usuarios (nombre, email, password, dni, fecha_de_nacimiento)
 
 insert into usuarios (nombre, email, password, dni, fecha_de_nacimiento)
 	values ("NElson", "TasH@gmail.com", "9876", 356675432, "2004-03-31");
+
+
+
     
 use `pro2pig7`;
 insert into productos (usuario_id, nombre, descripcion)
@@ -76,31 +79,35 @@ insert into productos (usuario_id, nombre, descripcion)
 
 use `pro2pig7`;   
 insert into productos (usuario_id, nombre, descripcion)
-	values (7, "Converse CDG", "zapatillas");
+	values (5, "Converse CDG", "zapatillas");
 
 use `pro2pig7`;
 insert into productos (usuario_id, nombre, descripcion)
-	values (7, "Nike Blazer", "zapatillas");
+	values (2, "Nike Blazer", "zapatillas");
 
 use `pro2pig7`;
 insert into productos (usuario_id, nombre, descripcion)
-	values (8, "Nike Air Jordan", "zapatillas");
+	values (1, "Nike Air Jordan", "zapatillas");
 
 use `pro2pig7`;   
 insert into productos (usuario_id, nombre, descripcion)
-	values (7, "New Balancer 2002r", "zapatillas");
+	values (4, "New Balancer 2002r", "zapatillas");
 
 use `pro2pig7`;   
 insert into productos (usuario_id, nombre, descripcion)
-	values (8, "Onitsuka Tiger Mexico 66", "zapatillas");
+	values (3, "Onitsuka Tiger Mexico 66", "zapatillas");
 
 use `pro2pig7`; 
 insert into productos (usuario_id, nombre, descripcion)
-	values (7, "Nike Cortez", "zapatillas");
+	values (4, "Nike Cortez", "zapatillas");
 
 use `pro2pig7`; 
 insert into productos (usuario_id, nombre, descripcion)
-	values (8, "Vieja V-12", "zapatillas");
+	values (5, "Vieja V-12", "zapatillas");
+
+
+
+
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
@@ -108,111 +115,111 @@ insert into comentarios (productos_id, usuario_id, texto)
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (11, 2, "Altas zapatillas");
+	values (7, 2, "Altas zapatillas");
 
 use `pro2pig7`;    
 insert into comentarios (productos_id, usuario_id, texto)
-	values (11, 3, "que ganas de esas zapatillas");
+	values (10, 3, "que ganas de esas zapatillas");
     
 use `pro2pig7`;    
 insert into comentarios (productos_id, usuario_id, texto)
-	values (11, 8, "no me gustan estas zapatillas");
+	values (11, 4, "no me gustan estas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (2, 1, "No me gusta este estilo de zapatillas");
+	values (9, 1, "No me gusta este estilo de zapatillas");
 
 use `pro2pig7`;    
 insert into comentarios (productos_id, usuario_id, texto)
-	values (2, 2, "El color no me gusta mucho");
+	values (16, 2, "El color no me gusta mucho");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (2, 3, "Amo estas zapatillas");
+	values (16, 3, "Amo estas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (2, 7, "que buenas zapatillas");
+	values (9, 4, "que buenas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (3, 1, "Estan buenas");
+	values (14, 5, "Estan buenas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (3, 2, "Buen color");
+	values (8, 2, "Buen color");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (3, 3, "Me gustan estas zapatillas");
+	values (7, 3, "Me gustan estas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (3, 8, "no me gustan estas zapatillas");
+	values (8, 5, "no me gustan estas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (4, 1, "buenas zapatillas");
+	values (13, 1, "buenas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (4, 2, "que buenas zapatillas");
+	values (12, 2, "que buenas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (4, 3, "No banco estas zapatillas");
+	values (16, 3, "No banco estas zapatillas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (4, 7, "no me gustan");
+	values (15, 2, "no me gustan");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (5, 1, "Me gustan");
+	values (14, 1, "Me gustan");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (5, 2, "No me gustan");
+	values (16, 2, "No me gustan");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (5, 3, "lindas zapatillas");
+	values (9, 3, "lindas zapatillas");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (5, 8, "estan buenas");
+	values (8, 4, "estan buenas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (6, 1, "Buenas zapas");
+	values (12, 1, "Buenas zapas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (6, 2, "me gustan mucho");
+	values (15, 2, "me gustan mucho");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (6, 3, "no son mis favoritas");
+	values (16, 3, "no son mis favoritas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (6, 8, "me gustan");
+	values (9, 4, "me gustan");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (7, 1, "me encantan");
+	values (7, 6, "me encantan");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (7, 2, "me gustan de este estilo");
+	values (13, 2, "me gustan de este estilo");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (7, 3, "no me gustan");
+	values (16, 6, "no me gustan");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (7, 7, "estan muy buenas");
+	values (14, 4, "estan muy buenas");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
@@ -220,31 +227,31 @@ insert into comentarios (productos_id, usuario_id, texto)
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (8, 2, "no me gustan");
+	values (9, 2, "no me gustan");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (8, 3, "las compraria");
+	values (12, 3, "las compraria");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (8, 8, "estan buenas");
+	values (16, 4, "estan buenas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (9, 1, "que lindas zapatillas");
+	values (17, 6, "que lindas zapatillas");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (9, 3, "no son mi estilo");
+	values (11, 3, "no son mi estilo");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (9, 7, "estan buenas");
+	values (11, 6, "estan buenas");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (9, 8, "no me gustan");
+	values (12, 3, "no me gustan");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
@@ -252,15 +259,15 @@ insert into comentarios (productos_id, usuario_id, texto)
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (10, 2, "no me gustan");
+	values (10, 4, "no me gustan");
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (10, 3, "no son mi estilo");
+	values (11, 6, "no son mi estilo");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (10, 7, "me gustan estas zapatillas");
+	values (10, 6, "me gustan estas zapatillas");
     
     
 
