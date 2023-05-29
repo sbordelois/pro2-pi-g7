@@ -43,7 +43,7 @@ CREATE TABLE usuarios (
 
 
 use `pro2pig7`;
-insert into usuarios (nombre, email, password, dni, fecusuariosha_de_nacimiento)
+insert into usuarios (nombre, email, password, dni, fecha_de_nacimiento)
 	values ("lucas", "lucas@gmail.com", "1234", 45201858, "04-11-2000");
 
 use `pro2pig7`;
