@@ -1,15 +1,14 @@
-const { usuarios, comments } = require('../data/data')
 const data = require('../data/data')
 const controller = {
-    login: function(req, res, next) {
+    login: function(req, res) {
         res.render("login")
       },
     
-    register: function(req, res, next) {
+    register: function(req, res) {
         res.render("register")
       },
     
-    profile: function(req, res, next) {
+    profile: function(req, res) {
         res.render("profile", {
           productos : data.productos ,
           usuarioLogueado: true, 
@@ -18,7 +17,7 @@ const controller = {
       })
       },
     
-    edit: function(req, res, next) {
+    edit: function(req, res) {
         res.render("edit-profile", {
           productos : data.productos,
           usuarioLogueado: true, 
