@@ -1,46 +1,36 @@
-module.exports = function (sequelize, dataTypes){
-
-    let alias = 'Usuario';
-
-    let cols = {
+module.exports = function(sequelize, dataTypes){
+    let alias = "usuarios"
+    let Columnas = {
         id: {
-            autoIncrement: true,
-            primaryKey: true,
-            type: dataTypes.INTEGER
+            type: dataTypes.INTEGER,
+            primarykey: true
         },
         nombre: {
-            type: dataTypes.STRING,
-            allowNull: false
+            type: dataTypes.string
         },
         email: {
-            type: dataTypes.STRING,
-            allowNull: false
+            type: dataTypes.string //esta bien?
         },
         password: {
-            type: dataTypes.STRING,
-            allowNull: false
+            type: dataTypes.INTEGER //esta bien?
         },
         foto_de_perfil: {
-            type: dataTypes.STRING,
+            type: dataTypes.null //esta bien?
         },
         dni: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
+            type: dataTypes.INTEGER //esta bien?
         },
         fecha_de_nacimiento: {
-            type: dataTypes.DATE,
-            allowNull: false
+            type: dataTypes.INTEGER //esta bien?
         },
-    };
-    //ver lo de timestamps y lo de seguidores
-    
-    let config = {
-        tableName: 'usuario',
-        timestamps: false,
-        underscored: true,
-    };
+        
+    }
 
-    
-    const usuarioTabla = sequelize.define(alias,cols,config);
-    return usuarioTabla
+    let config = {
+        tableName: "usuarios",
+        timestamps: false
+    }
+
+    const usuarios = sequelize.define(alias, columnas, config)
+    return usuarios 
 }
