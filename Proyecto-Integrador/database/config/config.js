@@ -1,4 +1,5 @@
-modeule.exports = {
+//añadir a git ignore
+module.exports = {
   "development": {
     "username": "root",
     "password": null,
