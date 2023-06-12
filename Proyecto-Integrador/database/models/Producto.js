@@ -3,16 +3,21 @@ module.exports = function (sequelize, DataTypes){
     let columnas = {
         id: {
             types: dataTypes.INTEGER,
-            PrimaryKey: true
+            PrimaryKey: true,
+            autoIncrement: true,
+            unsigned: true,
         },
         usuario_id: {
             types: dataTypes.INTEGER,
+            unsigned: True
         },
         nombre: {
-            types: dataTypes.STRING
+            types: dataTypes.STRING,
+            allownull: true,
         },
         descripcion: {
-            types: dataTypes.STRING
+            types: dataTypes.STRING,
+            allowNull: true,
         },
         img: {
             types: dataTypes.STRING
@@ -22,7 +27,8 @@ module.exports = function (sequelize, DataTypes){
 
     let config = {
         TableName: "productos",
-        timestamps: false
+        timestamps: false,
+        underscored: true,
     }
 
 

@@ -3,32 +3,42 @@ module.exports = function(sequelize, dataTypes){
     let Columnas = {
         id: {
             type: dataTypes.INTEGER,
-            primarykey: true
+            primarykey: true,
+            autoIncrement: true,
+            unsigned: true
         },
         nombre: {
-            type: dataTypes.string
+            type: dataTypes.string,
+            allowNull: false
         },
         email: {
-            type: dataTypes.string //esta bien?
+            type: dataTypes.string,
+            allownull: true,
+            unique: true
         },
         password: {
-            type: dataTypes.INTEGER //esta bien?
+            type: dataTypes.INTEGER,
+            allowNull: false
         },
         foto_de_perfil: {
-            type: dataTypes.null //esta bien?
+            type: dataTypes.STRING,
         },
         dni: {
-            type: dataTypes.INTEGER //esta bien?
+            type: dataTypes.INTEGER,
+            allowNull: false,
+            unique: true,
         },
         fecha_de_nacimiento: {
-            type: dataTypes.INTEGER //esta bien?
+            type: dataTypes.DATE,
+            allowNull: false, 
         },
         
     }
 
     let config = {
         tableName: "usuarios",
-        timestamps: false
+        timestamps: false,
+        underscored: true
     }
 
     const usuarios = sequelize.define(alias, columnas, config)
