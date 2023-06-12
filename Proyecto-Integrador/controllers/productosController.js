@@ -1,5 +1,5 @@
 const data = require('../data/data')
-const db = require ("../data/models/Producto")
+const db = require ("../database/models/index")
 const controller = {
     add: function(req, res){
         res.render("addproducts", {

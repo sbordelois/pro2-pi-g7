@@ -1,5 +1,5 @@
 const data = require('../data/data')
-//hay que hacer un modelo de index???
+const db = require ("../database/models/index")
 const controller = {
     index: function (req, res) {
         res.render("index", {
