@@ -1,9 +1,9 @@
 module.exports = function(sequelize, dataTypes){
     let alias = "comentarios"
-    let Columnas = {
+    let columnas = {
         id: {
             type: dataTypes.INTEGER,
-            primarykey: true,
+            primaryKey: true,
             autoIncrement: true,
             unsigned: true
         },

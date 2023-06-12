@@ -1,18 +1,18 @@
 module.exports = function(sequelize, dataTypes){
     let alias = "usuarios"
-    let Columnas = {
+    let columnas = {
         id: {
             type: dataTypes.INTEGER,
-            primarykey: true,
+            primaryKey: true,
             autoIncrement: true,
             unsigned: true
         },
         nombre: {
-            type: dataTypes.string,
+            type: dataTypes.STRING,
             allowNull: false
         },
         email: {
-            type: dataTypes.string,
+            type: dataTypes.STRING,
             allownull: true,
             unique: true
         },
