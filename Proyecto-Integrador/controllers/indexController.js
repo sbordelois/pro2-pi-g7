@@ -2,7 +2,9 @@ const data = require('../data/data')
 const db = require ("../database/models/index")
 const controller = {
     index: function (req, res) {
-        db.productos.findAll()
+        db.productos.findAll({
+            raw: true
+        })
         .then(function(data){
         })
         .catch(function(err) {console.log (err)} )
