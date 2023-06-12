@@ -239,7 +239,7 @@ insert into comentarios (productos_id, usuario_id, texto)
 
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
-	values (17, 6, "que lindas zapatillas");
+	values (16, 6, "que lindas zapatillas");
     
 use `pro2pig7`;
 insert into comentarios (productos_id, usuario_id, texto)
