@@ -23,7 +23,7 @@ const controller = {
             ]
         })
         .then(function(data){
-            //console.log(data)
+            console.log(data)
             res.render('index', {
                 productos: data,
                 usuarioLogueado: false
