@@ -1,5 +1,6 @@
 const data = require('../data/data')
-const db = require ("../database/models/index")
+let db = require('../database/models/index')
+let op = db.Sequelize.Op
 const controller = {
     login: function(req, res) {
         res.render("login")
