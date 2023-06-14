@@ -1,5 +1,5 @@
 module.exports = function(sequelize, dataTypes){
-    let alias = "comentarios"
+    let alias = "Comentarios"
     let columnas = {
         id: {
             type: dataTypes.INTEGER,
@@ -29,6 +29,12 @@ module.exports = function(sequelize, dataTypes){
         underscored: true
     }
 
-    const comentarios = sequelize.define(alias, columnas, config)
-    return comentarios 
+    const Comentarios = sequelize.define(alias, columnas, config)
+    Comentarios.associate = function(models){
+        Comentarios.belongsTo(models.Productos, {
+            as:'Productos',
+            foreignKey: 'productos_id'
+        })
+    }
+    return Comentarios 
 }

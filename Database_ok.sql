@@ -14,7 +14,7 @@ CREATE TABLE usuarios (
      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
      deleted_at TIMESTAMP NULL DEFAULT NULL
-	CONSTRAINT fk_usuarios_id FOREIGN KEY (comment_id) REFERENCES comentarios(id)
+	 CONSTRAINT fk_usuarios_id FOREIGN KEY (comment_id) REFERENCES comentarios(id)
 
  );
 
@@ -24,6 +24,7 @@ CREATE TABLE usuarios (
  usuario_id INT UNSIGNED,
  nombre VARCHAR(50) NOT NULL,
  descripcion TEXT,
+ image TEXT,
  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
  deleted_at TIMESTAMP NULL DEFAULT NULL,
@@ -70,44 +71,44 @@ insert into usuarios (nombre, email, password, dni, fecha_de_nacimiento)
 
     
 use `pro2pig7`;
-insert into productos (usuario_id, nombre, descripcion)
-	values (6, "Vans Lx", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion, image)
+	values (6, "Vans Lx", "zapatillas"),"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF";
 
 use `pro2pig7`;  
-insert into productos (usuario_id, nombre, descripcion)
-	values (2, "Adidas Samba", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion, image)
+	values (2, "Adidas Samba", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`;
-insert into productos (usuario_id, nombre, descripcion)
-	values (3, "Nike Air Max", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion, image)
+	values (3, "Nike Air Max", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`;   
-insert into productos (usuario_id, nombre, descripcion)
-	values (6, "Converse CDG", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (6, "Converse CDG", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`;
-insert into productos (usuario_id, nombre, descripcion)
-	values (2, "Nike Blazer", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (2, "Nike Blazer", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`;
-insert into productos (usuario_id, nombre, descripcion)
-	values (1, "Nike Air Jordan", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (1, "Nike Air Jordan", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`;   
-insert into productos (usuario_id, nombre, descripcion)
-	values (4, "New Balancer 2002r", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (4, "New Balancer 2002r", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`;   
-insert into productos (usuario_id, nombre, descripcion)
-	values (3, "Onitsuka Tiger Mexico 66", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (3, "Onitsuka Tiger Mexico 66", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`; 
-insert into productos (usuario_id, nombre, descripcion)
-	values (4, "Nike Cortez", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (4, "Nike Cortez", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 use `pro2pig7`; 
-insert into productos (usuario_id, nombre, descripcion)
-	values (5, "Vieja V-12", "zapatillas");
+insert into productos (usuario_id, nombre, descripcion,image)
+	values (5, "Vieja V-12", "zapatillas","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.revistagq.com%2Fmoda%2Fgaleria%2Fzapatillas-retro-puma-adidas-reebok-nike&psig=AOvVaw2aoi0ubN3PsdNF5gN5ZVGz&ust=1686863850678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLis-NbXw_8CFQAAAAAdAAAAABAF");
 
 
 

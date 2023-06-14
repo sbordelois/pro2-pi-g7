@@ -18,7 +18,6 @@ const controller = {
                     include: [{association:'comentarios_usuarios'}]}, /* ver esas associations y nombrarlas bien*/
                     {association: ' productos_usuarios'}
                 ],
-                order: [['Comments', 'id', 'DESC']]
             })
         .then(function(data){
             /* cambiar si el usuario esta logueado q cambie si lo puede ediar o no etc */

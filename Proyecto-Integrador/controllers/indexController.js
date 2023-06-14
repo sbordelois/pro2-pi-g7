@@ -1,3 +1,4 @@
+const { productos } = require('../data/data')
 const data = require('../data/data')
 const db = require ("../database/models/index")
 let op = db.Sequelize.Op
@@ -13,15 +14,17 @@ const controller = {
         })
     } */
     index: function(req, res){
-        db.Productos.findAll({
+        let criterio = {
             order: 
-            [ 'id', 'DESC'],
+        [[ 'id', 'DESC']],
             raw: true,
             nest:true,
-            include:[
-                {association: 'productos_usuarios'}, /* ver bien la association */
-            ]
-        })
+            include:
+                {association: 'productos_usuarios'}, /*  ver bien la association  */
+
+        }
+        db.Productos.findAll(criterio)
+        
         .then(function(data){
             console.log(data)
             res.render('index', {

@@ -1,5 +1,5 @@
 module.exports = function (sequelize, dataTypes){
-    let alias = "productos"
+    let alias = "Productos"
     let columnas = {
         id: {
             type: dataTypes.INTEGER,
@@ -19,10 +19,10 @@ module.exports = function (sequelize, dataTypes){
             type: dataTypes.STRING,
             allowNull: true,
         },
-        image: {
+/*         image: {
             type: dataTypes.STRING
         }
-
+ */
     }
 
     let config = {
@@ -35,12 +35,12 @@ module.exports = function (sequelize, dataTypes){
 
     const Productos = sequelize.define(alias, columnas, config)
     Productos.associate = function(models){
-        Productos.belongsTo(models.usuarios, {
-            as:'usuarios',
+        Productos.belongsTo(models.Usuarios, {
+            as:'productos_usuarios',
             foreignKey:'usuario_id'
         })
-        Productos.belongsToMany(models.comentarios, {
-            as: 'comentarios',
+        Productos.belongsToMany(models.Comentarios, {
+            as: 'Comentarios',
             through: 'fk_product_id', /* no se cual es la tabla pivot q las une */
             foreignKey:'productos_id',
             otherKey: 'productos_id',/* nose que dos FK poner, creo q en la tabla de procutos falta una fk de comentarios */
