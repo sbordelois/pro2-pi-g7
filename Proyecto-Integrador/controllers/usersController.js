@@ -5,19 +5,27 @@ const controller = {
     login: function(req, res) {
         res.render("login")
       },
+    logout: function(req,res) {
+      req.session.user = undefined
+      res.redirect('/')
+    },
     
     register: function(req, res) {
         res.render("register")
       },
     
-    profile: function(req, res) {
-        res.render("profile", {
-          productos : data.productos ,
-          usuarioLogueado: true, 
-          usuarios : data.usuarios,
-          comments: data.comments
+    profile: function(req, res){
+      let id = req.session.user.id
+      db.Users.findByPk(id)
+      .then(function(user){
+          res.render('profile', {
+              usuarioLogueado:true, 
+          })
       })
-      },
+      .catch(function(err){
+          console.log(err)
+      })
+  },
     
     edit: function(req, res) {
         res.render("edit-profile", {

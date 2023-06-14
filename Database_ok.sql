@@ -4,6 +4,7 @@ USE `pro2pig7`;
 
 CREATE TABLE usuarios (
      id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	 comment_id INT UNSIGNED,
      nombre VARCHAR(20) NOT NULL,
      email VARCHAR(20) NOT NULL UNIQUE,
      password VARCHAR(20) NOT NULL,
@@ -13,6 +14,8 @@ CREATE TABLE usuarios (
      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
      updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
      deleted_at TIMESTAMP NULL DEFAULT NULL
+	CONSTRAINT fk_usuarios_id FOREIGN KEY (comment_id) REFERENCES comentarios(id)
+
  );
 
 
