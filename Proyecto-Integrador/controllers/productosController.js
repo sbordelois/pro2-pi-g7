@@ -1,6 +1,7 @@
 /* const data = require('../data/data')*/
 const { Association } = require("sequelize")
-const db = require ("../database/models/index")
+const db = require ("../database/models")
+
 /* Productos no esta requerido ?? */
 let op = db.Sequelize.Op
 const controller = {
@@ -14,7 +15,7 @@ const controller = {
         db.Productos.findByPk(id,
              {
                 include:[
-                    {association: 'Coments',
+                    {association: 'Comentarios',
                     include: [{association:'comentarios_usuarios'}]}, /* ver esas associations y nombrarlas bien*/
                     {association: ' productos_usuarios'}
                 ],

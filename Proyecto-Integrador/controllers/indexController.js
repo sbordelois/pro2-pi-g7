@@ -29,6 +29,7 @@ const controller = {
             console.log(data)
             res.render('index', {
                 productos: data,
+                comments: data.comentarios,
                 usuarioLogueado: false
             })
             
