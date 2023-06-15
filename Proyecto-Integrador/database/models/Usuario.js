@@ -42,6 +42,14 @@ module.exports = function(sequelize, dataTypes){
     }
 
     const Usuarios = sequelize.define(alias, columnas, config)
+    usuarios.hasMany(models.Producto, {
+        as: "usuarios_productos",
+        foreignKey: "usuario_id" //id_usuario es la fk que esta definida en Comentarios pero vinculando mi tabla 
+    })
+    usuarios.hasMany(models.Comentario, {
+        as: "usuarios_comentarios", 
+        foreignKey: "usuario_id"
+    })
 
     return Usuarios
 }

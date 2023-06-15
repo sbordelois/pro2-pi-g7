@@ -42,8 +42,8 @@ CREATE TABLE usuarios (
  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
  deleted_at TIMESTAMP NULL DEFAULT NULL,
-FOREIGN KEY (productos_id) REFERENCES productos(id),
-FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+ FOREIGN KEY (productos_id) REFERENCES productos(id),
+ FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
 
