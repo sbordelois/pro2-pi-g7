@@ -8,21 +8,21 @@
             <h2 class="titulos-formularios">Registrate</h2>
         </div>
     
-        <form class="formularios" action="/users/profile" method="GET">
+        <form class="formularios" action="/users/register" method="post">
             <div>
-                <input type="email" placeholder="Digita tu mail">
+                <input type="email" name="email" placeholder="Digita tu mail">
             </div>
             <div>
-                <input type="text" placeholder="Digita tu usuario">
+                <input type="text" name="nombre" placeholder="Digita tu usuario">
             </div>
             <div>
-                <input type="password" placeholder="Digita tu contraseña">
+                <input type="password" name="password" placeholder="Digita tu contraseña">
             </div>
             <div>
-                <input type="date" placeholder="Digita tu fecha de nacimiento">
+                <input type="date" name="fecha_de_nacimiento" placeholder="Digita tu fecha de nacimiento">
             </div>
             <div>
-                <input type="number" placeholder="Digita tu DNI">
+                <input type="number" name="dni" placeholder="Digita tu DNI">
             </div>
             <div>
                 <input type="text" placeholder="Link a tu foto de perfil">

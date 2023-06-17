@@ -4,8 +4,10 @@ const controller = require('../controllers/usersController')
 
 /* GET users listing. */
 router.get('/login', controller.login);
+router.post("/login", controller.checkUser)
 
 router.get('/register', controller.register );
+router.post('/register', controller.create);
 
 router.get('/profile', controller.profile );
 

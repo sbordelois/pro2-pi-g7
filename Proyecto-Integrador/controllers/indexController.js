@@ -27,6 +27,7 @@ const controller = {
         
         .then(function(data){
             console.log(data)
+            //res.send(data)
             res.render('index', {
                 productos: data,
                 comments: data.comentarios,

@@ -9,16 +9,14 @@
                 <h2 class="titulos-formularios">Ingresar</h2>
             </div>
 
-            <form class="formularios" action="/users/profile" method="GET">
+            <form class="formularios" action="/users/login" method="post">
                 <div>
-                    <input type="text" placeholder="Digita tu usuario">
+                    <input type="text" name="email" placeholder="Digita tu mail">
                 </div>
                 <div>
-                    <input type="password" placeholder="Digita tu contrasenia">
+                    <input type="password" name="password" placeholder="Digita tu contrasenia">
                 </div>
-                <div>
-                    <input type="checkbox" placeholder="Recordarme"><a>Recordarme</a>
-                </div>
+        
                 <button>Enter</button>
 
             </form>

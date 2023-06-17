@@ -16,11 +16,12 @@ const controller = {
              {
                 include:[
                     {association: 'productos_comentarios',
-                    include: [{association:'comentarios_usuarios'}]}, /* ver esas associations y nombrarlas bien*/
-                    {association: ' productos_usuarios'}
+                    include: {association:'comentarios_usuarios'}}, /* ver esas associations y nombrarlas bien*/
+                    {association: 'productos_usuarios'}
                 ],
             })
         .then(function(data){
+            //res.send(data)
             /* cambiar si el usuario esta logueado q cambie si lo puede ediar o no etc */
             res.render('detail-products', {
                 usuarioLogueado:false,
@@ -66,6 +67,20 @@ const controller = {
             console.log(err)
         })
     },
+    addComment:function(req,res){
+        if(req.session.user){
+            let comment = {
+                usuario_id : req.session.user.id,
+                producto_id : req.params.id,
+                texto: req.body.texto
+                }
+                db.Comentarios.create(comment)
+                return res.redirect(`/productos/detail/${req.params.id}`)
+            }
+            else{
+                return res.redirect("/users/login")
+            }
+        }
 
 }
 
