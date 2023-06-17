@@ -36,14 +36,18 @@ const controller = {
         let busquedadelusuario = req.query.busqueda
 
         db.Productos.findAll({
-            raw:true,
-            nest:true,
-            order:[['created_at', 'DESC']],
             where:{
-                title:{
-                    [op.like]: `%${busquedadelusuario}%`
-                }
-            }
+                [op.or]:[
+                  { nombre:{ [op.like]: `%${busquedadelusuario}%`}},
+                  {descripcion:{[op.like]:`%${busquedadelusuario}%`}}
+                    ],
+            },
+            order:[['created_at', 'DESC']],
+            include: [
+                {association:"productos_usuarios"},
+                {association:"productos_comentarios"}
+            ]
+            
         })
         .then(function(data){
             console.log(data.length)
