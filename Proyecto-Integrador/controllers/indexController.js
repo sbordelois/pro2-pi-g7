@@ -24,15 +24,23 @@ const controller = {
 
         }
         db.Productos.findAll(criterio)
-        
         .then(function(data){
             console.log(data)
             //res.send(data)
-            res.render('index', {
-                productos: data,
-                comments: data.comentarios,
-                usuarioLogueado: false
-            })
+            if (req.session.user != undefined){
+                res.render('index', {
+                    productos: data,
+                    comments: data.comentarios,
+                    usuarioLogueado: true
+                })
+            } else {
+                res.render('index', {
+                    productos: data,
+                    comments: data.comentarios,
+                    usuarioLogueado: false
+                })
+            }
+            
             
         })
         .catch(function(err){

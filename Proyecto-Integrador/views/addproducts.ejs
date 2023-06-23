@@ -12,19 +12,16 @@
             <div class="col-12">
                 <h2 class="titulos-formularios">Agregar productos</h2>
             </div>
-                <form class="formularios" action="/users/profile" method="GET">
+                <form class="formularios" method="POST">
                 <div>
                     <p>Imagen del producto: </p>
-                    <input type="file" placeholder="Imagen del producto">
+                    <input type="text" placeholder="Imagen del producto">
                 </div>
                 <div>
-                    <input type="text" placeholder="Nombre del producto">
+                    <input type="text" name="nombre_del_producto" placeholder="Nombre del producto">
                 </div>
                 <div>
-                    <input type="text" placeholder="descripcion">
-                </div>
-                <div>
-                    <input type="date" placeholder="Fecha de carga">
+                    <input type="text" name="descripcion_del_producto" placeholder="descripcion">
                 </div>
                 <button>Subir producto</button>
                 </form>

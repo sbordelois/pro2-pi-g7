@@ -75,7 +75,7 @@ const controller = {
         if(req.session.user){
             let comment = {
                 usuario_id : req.session.user.id,
-                producto_id : req.params.id,
+                productos_id : req.params.id,
                 texto: req.body.texto
                 }
                 db.Comentarios.create(comment)
@@ -84,8 +84,41 @@ const controller = {
             else{
                 return res.redirect("/users/login")
             }
+        },
+        create: function(req, res) {
+            let producto = {
+                usuario_id: req.session.user.id,
+                nombre: req.body.nombre_del_producto,
+                descripcion: req.body.descripcion_del_producto,
+            }
+            db.Productos.create(producto)
+            .then(function(data) {
+                res.redirect(`/productos/detail/${data.id}`)
+            })
+            .catch(function(err) {
+                console.log(err)
+            }) 
+        },
+        delete_product: function(req, res) { // Falta agregar ruta y botón (y validar que el producto pertenezca el usuario logueado!!)
+            if (req.session.user == undefined) {
+                return res.redirect("/users/login")
+            } else {
+                db.Usuarios.findByPk(req.session.user.id)
+            }
+            db.Productos.destroy({
+                where: {
+                    id: req.params.id
+                }
+            })
+            .then(function(data) {
+                res.redirect("/")
+            })
+            .catch(function(err) {
+                console.log(err)
+            })
         }
-
-}
+            
+    
+    }
 
 module.exports = controller
